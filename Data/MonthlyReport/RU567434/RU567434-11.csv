@@ -1,0 +1,4 @@
+InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
+377657,"Waste management services",91648,18329.6,109978,RON,2017-11-28
+447165,"IT Support",102126,20425.2,122551,RON,2017-11-27
+476720,"Beverages and Catering",156934,31386.8,188321,EUR,2017-11-28

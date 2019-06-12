@@ -1,0 +1,3 @@
+InvoiceNumber,Item,Date,Amount,Tax,Total,Currency
+475177,"Beverages and Catering",2017-06-18,174305,34861,209166,USD
+867217,"Waste management services",2017-06-19,214119,42823.8,256943,RON
