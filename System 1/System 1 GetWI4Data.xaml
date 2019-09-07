@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>499.2,848.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>499.2,808.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -92,7 +92,7 @@
                   <OutArgument x:TypeArguments="sd:DataRow[]">[out_DataRow]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="sd:DataRow[]">[out_ExtratedDataTable.Select("Type='WI4' AND Status='Open'")]</InArgument>
+                  <InArgument x:TypeArguments="sd:DataRow[]">[out_ExtratedDataTable.Select("Type='WI4' AND Status='0'")]</InArgument>
                 </Assign.Value>
               </Assign>
             </Sequence>
