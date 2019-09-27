@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>899.2,3291.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>899.2,2854.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -74,7 +74,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="859.2,3211.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="859.2,2774.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[{&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;, &quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;}]" Name="Months" />
       <Variable x:TypeArguments="x:Boolean" Name="PopupExists" />
@@ -85,7 +85,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="836.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign out_DirectoryPath" sap:VirtualizedContainerService.HintSize="836.8,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_DirectoryPath]</OutArgument>
       </Assign.To>
@@ -94,7 +94,7 @@
       </Assign.Value>
     </Assign>
     <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Directory" sap:VirtualizedContainerService.HintSize="836.8,22.4" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[out_DirectoryPath]" />
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="836.8,582.4" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="03438c49c1a6df8ffcbe451a2a46a0ac" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Reports - Download Monthly Report' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="836.8,52.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="03438c49c1a6df8ffcbe451a2a46a0ac" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Reports - Download Monthly Report' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -121,18 +121,18 @@
       </ui:BrowserScope.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="836.8,1929.6" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="836.8,2022.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Months]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="month" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="820.8,1795.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="820.8,1888" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -155,7 +155,7 @@
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="0b361cca1ef98f3bb1691695abc0f6d6" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Reports - Download Monthly Report' /&gt;&#xA;&lt;webctrl id='reportMonth' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
                       </ui:SelectItem.Target>
                     </ui:SelectItem>
-                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  buttonDownload'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  buttonDownload'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -167,7 +167,7 @@
                         </ui:CursorPosition>
                       </ui:Click.CursorPosition>
                       <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="27ff6b8f5beb61a406429f8be999da7e" Selector="&lt;webctrl id='buttonDownload' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE" />
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="27ff6b8f5beb61a406429f8be999da7e" Selector="&lt;webctrl id='buttonDownload' tag='BUTTON' /&gt;" WaitForReady="COMPLETE" />
                       </ui:Click.Target>
                     </ui:Click>
                   </Sequence>
@@ -182,7 +182,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Reports - Download Monthly Report' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
               </ui:ImageFound.Target>
             </ui:ImageFound>
-            <If Condition="[PopupExists]" sap:VirtualizedContainerService.HintSize="798.4,928.8" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[PopupExists]" sap:VirtualizedContainerService.HintSize="798.4,1021.6" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="336.8,332" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
@@ -190,7 +190,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Chrome'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                  <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe Chrome'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
                     <ui:ClickImage.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -219,30 +219,57 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Save File" sap:VirtualizedContainerService.HintSize="436.8,779.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Save File" sap:VirtualizedContainerService.HintSize="436.8,872" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'chrome.exe  Save As'" sap:VirtualizedContainerService.HintSize="414.4,554.4" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="151d42dd1663109f8f3770a881e1178c" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;">
+                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window 'chrome.exe  Save As'" sap:VirtualizedContainerService.HintSize="414.4,647.2" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="151d42dd1663109f8f3770a881e1178c" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;">
                     <ui:WindowScope.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,407.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="336.8,500" sap2010:WorkflowViewState.IdRef="Sequence_5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
+                          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="314.4,52.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <ui:Delete ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[out_DirectoryPath +&quot;\&quot; + in_TaxId + &quot;-&quot;+ Num.ToString]" />
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,132.8" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="209.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="File does not exists" />
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
                           <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="314.4,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="False" SimulateType="True" Text="[out_DirectoryPath +&quot;\&quot; + in_TaxId + &quot;-&quot;+ Num.ToString]">
                             <ui:TypeInto.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e0e660097d1b58d837e2b85e0fb9cdf0" Selector="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='*' /&gt;" WaitForReady="INTERACTIVE" />
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e0e660097d1b58d837e2b85e0fb9cdf0" Selector="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='*' /&gt;" WaitForReady="COMPLETE" />
                             </ui:TypeInto.Target>
                           </ui:TypeInto>
-                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="314.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
                                 <ui:CursorPosition.OffsetX>
@@ -254,7 +281,7 @@
                               </ui:CursorPosition>
                             </ui:Click.CursorPosition>
                             <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="3c307b5dc52267a594d7f5d741becf07" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" WaitForReady="INTERACTIVE" />
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="3c307b5dc52267a594d7f5d741becf07" Selector="&lt;wnd app='chrome.exe' cls='#*' title='Save As' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" WaitForReady="COMPLETE" />
                             </ui:Click.Target>
                           </ui:Click>
                         </Sequence>

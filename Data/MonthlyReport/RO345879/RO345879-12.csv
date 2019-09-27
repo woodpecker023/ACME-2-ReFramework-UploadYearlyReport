@@ -1,6 +1,0 @@
-InvoiceNumber,Item,Amount,Tax,Total,Currency,Date
-837641,"Concierge Services",6064,1212.8,7276.8,CAD,2017-12-24
-604342,"Waste management services",48916,9783.2,58699.2,EUR,2017-12-07
-896756,"Various paper supplies",19499,3899.8,23398.8,RON,2017-12-15
-419129,"Waste management services",209816,41963.2,251779,USD,2017-12-21
-435538,"Concierge Services",263439,52687.8,316127,RON,2017-12-20
