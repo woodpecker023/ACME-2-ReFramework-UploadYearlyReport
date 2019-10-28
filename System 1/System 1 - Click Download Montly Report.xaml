@@ -93,7 +93,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="64e49bb660ddf2e80e583b1bc03bf92f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;&#xA;&lt;webctrl aaname='Download Monthly Report' /&gt;&#xA;" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="64e49bb660ddf2e80e583b1bc03bf92f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;&lt;webctrl aaname='Download Monthly Report' /&gt;" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
           </Sequence>
